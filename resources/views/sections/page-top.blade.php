@@ -6,7 +6,7 @@
         <div class="f-left texts">
             <!-- Text -->
             <p>
-                Welcome to STI Labs! We create awesome blogs!
+                Moj prvy laravel blog
             </p>
         </div>
         <!-- Socials -->

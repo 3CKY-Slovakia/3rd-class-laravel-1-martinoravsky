@@ -1,5 +1,5 @@
 <!-- Navigation - select your nav color - dark-nav or white-nav -->
-<nav id="navigation" class="white-nav relative-nav">
+<nav id="navigation" class="dark-nav relative-nav">
     <!-- Navigation -->
     <div class="navigation double-nav raleway">
         <!-- Navigation Inner -->

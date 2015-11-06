@@ -6,11 +6,11 @@
         <div class="left f-left">
             <!-- Header -->
             <h2 class="page_header light">
-                STI Blog
+                Moj prvy
             </h2>
             <!-- Sub Page Text -->
             <h5 class="page_note light">
-                Welcome to our LABS exercise
+                Laravel blog
             </h5>
         </div>
         <!-- Right -->

@@ -3,7 +3,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Crexis Multipurpose One/Multi Page HTML Theme</title>
+    <title>Moj prvy laravel blog</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
     <!--Favicon -->
