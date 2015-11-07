@@ -23,7 +23,12 @@
 
                 <!-- Nav List -->
                 <ul class="nav uppercase normal">
-
+                    <li>
+                        <a href="auth/register">Sign up</a>
+                    </li>
+                    <li>
+                        <a href="/auth/login/">Sign in</a>
+                    </li>
                     <li>
                         <a href="#">Home</a>
                     </li>

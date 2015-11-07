@@ -20,3 +20,5 @@ Route::group(['prefix' => 'blog-post'], function () {
         return view('blog-post');
     });
 });
+
+
