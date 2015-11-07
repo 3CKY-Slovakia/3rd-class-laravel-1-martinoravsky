@@ -8,59 +8,68 @@
     <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
     <database-model serializer="dbm" rdbms="MYSQL" format-version="2.2">
       <schema id="1" name="blog"/>
-      <table id="2" parent="1" name="password_resets"/>
-      <table id="3" parent="1" name="users"/>
-      <column id="4" parent="2" name="email">
+      <table id="2" parent="1" name="migrations"/>
+      <table id="3" parent="1" name="password_resets"/>
+      <table id="4" parent="1" name="users"/>
+      <column id="5" parent="2" name="migration">
         <mandatory>1</mandatory>
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="5" parent="2" name="token">
+      <column id="6" parent="2" name="batch">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="7" parent="3" name="email">
         <mandatory>1</mandatory>
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="6" parent="2" name="created_at">
+      <column id="8" parent="3" name="token">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="9" parent="3" name="created_at">
         <mandatory>1</mandatory>
         <data-type>timestamp</data-type>
         <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
       </column>
-      <column id="7" parent="3" name="id">
+      <column id="10" parent="4" name="id">
         <mandatory>1</mandatory>
         <data-type>int(10) unsigned</data-type>
       </column>
-      <column id="8" parent="3" name="name">
+      <column id="11" parent="4" name="name">
         <mandatory>1</mandatory>
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="9" parent="3" name="email">
+      <column id="12" parent="4" name="email">
         <mandatory>1</mandatory>
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="10" parent="3" name="password">
+      <column id="13" parent="4" name="password">
         <mandatory>1</mandatory>
         <data-type>varchar(60)</data-type>
       </column>
-      <column id="11" parent="3" name="remember_token">
+      <column id="14" parent="4" name="remember_token">
         <data-type>varchar(100)</data-type>
       </column>
-      <column id="12" parent="3" name="created_at">
+      <column id="15" parent="4" name="created_at">
         <mandatory>1</mandatory>
         <data-type>timestamp</data-type>
         <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
       </column>
-      <column id="13" parent="3" name="updated_at">
+      <column id="16" parent="4" name="updated_at">
         <mandatory>1</mandatory>
         <data-type>timestamp</data-type>
         <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
       </column>
-      <index id="14" parent="3" name="users_email_unique">
+      <index id="17" parent="4" name="users_email_unique">
         <columns>email</columns>
         <unique>1</unique>
       </index>
-      <key id="15" parent="3" name="PRIMARY">
+      <key id="18" parent="4" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <key id="16" parent="3" name="users_email_unique">
+      <key id="19" parent="4" name="users_email_unique">
         <columns>email</columns>
         <underlying-index>users_email_unique</underlying-index>
       </key>

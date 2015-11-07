@@ -36,7 +36,6 @@ class AuthController extends Controller
 
 
 
-
     /**
      * Get a validator for an incoming registration request.
      *
@@ -69,5 +68,6 @@ class AuthController extends Controller
         ]);
     }
 
-
+    protected $redirectPath = '/';
+    //protected $loginPath = '/';
 }

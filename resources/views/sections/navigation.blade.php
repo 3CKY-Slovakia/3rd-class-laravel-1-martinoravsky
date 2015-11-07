@@ -23,12 +23,22 @@
 
                 <!-- Nav List -->
                 <ul class="nav uppercase normal">
-                    <li>
-                        <a href="auth/register">Sign up</a>
-                    </li>
-                    <li>
-                        <a href="/auth/login/">Sign in</a>
-                    </li>
+                    @if(!Auth::check())
+                        <li>
+                            <a href="auth/login">Prihlasit</a>
+                        </li>
+                        <li>
+                            <a href="auth/register">Registrovat</a>
+                        </li>
+                    @else
+                        <li>
+                            <a href="#">Prihlaseny: {{Auth::user()->name}}</a>
+                        </li>
+                        <li>
+                           <a href="{{ Auth::logout() }}">Odhlasit</a>
+                        </li>
+                   @endif
+
                     <li>
                         <a href="#">Home</a>
                     </li>
