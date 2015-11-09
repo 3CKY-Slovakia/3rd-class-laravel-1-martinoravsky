@@ -30,6 +30,9 @@
     <link rel="stylesheet" href={{asset("css/responsive.css")}} />
     <!-- End Page Styles -->
 
+    <!-- moje -->
+    <link rel="stylesheet" href={{asset("css/moje.css")}}/>
+
     <!-- Page Layout Color, night or dark -->
     <link id="changeable_tone" rel="stylesheet" href={{asset("css/page_tones/dark.css")}} />
     <!-- End Page Layout Color -->

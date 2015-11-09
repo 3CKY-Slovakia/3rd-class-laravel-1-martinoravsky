@@ -8,7 +8,7 @@
             <!-- Logo Area -->
             <div class="logo f-left">
                 <!-- Logo Link -->
-                <a href="#" class="logo-link scroll">
+                <a href="/" class="logo-link scroll">
                     <!-- Logo Image / data-second-logo for only white nav -->
                     <img src="{{ asset('/images/logo/logo_dark_red.png') }}" data-second-logo="../images/logo/logo_dark_red.png" alt="crexis_logo" />
                 </a>
