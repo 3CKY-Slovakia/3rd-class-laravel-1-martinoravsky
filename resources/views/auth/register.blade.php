@@ -2,12 +2,7 @@
 
 
 @section('content')
-@parent
 
-
-
-
-        <!-- resources/views/auth/register.blade.php -->
 
 <form method="POST" action="/auth/register" style="position: relative;padding:30px">
     {!! csrf_field() !!}

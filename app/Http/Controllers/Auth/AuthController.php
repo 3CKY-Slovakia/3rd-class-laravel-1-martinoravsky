@@ -69,5 +69,5 @@ class AuthController extends Controller
     }
 
     protected $redirectPath = '/';
-    //protected $loginPath = '/';
+    protected $loginPath = '/auth/login';
 }

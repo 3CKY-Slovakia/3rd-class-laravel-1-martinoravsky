@@ -23,12 +23,12 @@
 
                 <!-- Nav List -->
                 <ul class="nav uppercase normal">
-                    @if(!Auth::check())
+                    @unless(Auth::check())
                         <li>
-                            <a href="auth/login">Prihlasit</a>
+                            <a href="/auth/login">Prihlasit</a>
                         </li>
                         <li>
-                            <a href="auth/register">Registrovat</a>
+                            <a href="/auth/register">Registrovat</a>
                         </li>
                     @else
                         <li>
@@ -37,7 +37,7 @@
                         <li>
                            <a href="{{ Auth::logout() }}">Odhlasit</a>
                         </li>
-                   @endif
+                   @endunless
 
                     <li>
                         <a href="#">Home</a>

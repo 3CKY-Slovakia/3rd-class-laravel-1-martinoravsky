@@ -2,7 +2,7 @@
 
 
 @section('content')
-@parent
+
 
 
 <form method="POST" action="/auth/login" style="position:relative;padding:30px">
